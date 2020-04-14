@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ECE19F"
+    android:orientation="vertical">
+
     <EditText
         android:id="@+id/edit_word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_padding"
+        android:layout_marginBottom="@dimen/big_padding"
+        android:background="#FFFFFF"
+        android:backgroundTint="#EFECDD"
         android:fontFamily="sans-serif-light"
         android:hint="@string/hint_word"
         android:inputType="textAutoComplete"
         android:padding="@dimen/small_padding"
-        android:layout_marginBottom="@dimen/big_padding"
-        android:layout_marginTop="@dimen/big_padding"
-        android:textSize="18sp" />
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
     <Button
         android:id="@+id/button_save"
-        android:layout_width="match_parent"
+        android:layout_width="164dp"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:layout_marginLeft="135dp"
+        android:layout_marginRight="150dp"
+        android:background="#EFECDD"
         android:text="@string/button_save"
-        android:textColor="@color/buttonLabel" />
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp" />
 </LinearLayout>
